@@ -20,7 +20,7 @@ li {
     height: 75px;
     justify-content: center;
     align-items: center;
-    gap: 550px;
+    gap: 535px;
 }
 
 .header h1 {
@@ -34,19 +34,19 @@ li {
 }
 
 .left-header {
-    width: 200px;
+    width: 250px;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 .right-header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     gap: 20px;
-    width: 200px;
+    width: 250px;
 }
 
 .right-header img {
@@ -68,7 +68,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1330px;
+    width: 1485px;
     text-align: left;
     font-size: 30px;
 }
@@ -106,13 +106,14 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 1300px;
+    height: 1400px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgb(7, 6, 20), rgb(38, 35, 56));
 }
 
 .projects-header {
     text-align: center;
-    margin-right: 1350px;
+    margin-right: 1480px;
     color: rgba(247, 76, 76, 0.856);
     font-weight: bold;
     font-size: 35px;
@@ -123,7 +124,6 @@ li {
     flex-direction: column;
     justify-content: space-around;
     gap: 100px;
-    margin-right: 150px;
 }
 
 .projects-upper, .projects-lower {
@@ -131,12 +131,15 @@ li {
     flex-direction: row;
     justify-content: center;
     gap: 100px;
-    height: 400px;
+    height: 500px;
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 30px;
-    width: 350px;
+    width: 450px;
     outline: 10px solid rgb(2, 3, 20);
     background-color: #1b1929;
     box-shadow: 20px 20px 10px rgb(255, 89, 89);
@@ -150,6 +153,11 @@ li {
     text-decoration: none;
     font-style: none;
     color: white;
+}
+
+.project img {
+    height: 300px;
+    width: 320px;
 }
 
 /* FOOTER */
