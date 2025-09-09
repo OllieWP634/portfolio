@@ -128,8 +128,8 @@ li {
 .project {
     padding: 30px;
     width: 350px;
-    outline: 10px solid #1F2937;
-    background-color: #2B2E41;
+    outline: 10px solid rgb(0, 0, 0);
+    background-color: #1b1929;
     box-shadow: 20px 20px 10px rgb(255, 89, 89);
 }
 
