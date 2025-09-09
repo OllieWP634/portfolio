@@ -5,7 +5,7 @@ body {
     color: white;
     font-family: 'monospace';
     min-width: 2000px;
-    background-image: linear-gradient(rgb(7, 4, 20), rgb(13, 6, 29));;
+    background-color: rgb(7, 4, 20);
 }
 
 li {
@@ -35,6 +35,9 @@ li {
 
 .left-header {
     width: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .right-header {
@@ -47,7 +50,7 @@ li {
 }
 
 .right-header img {
-    height: 50px;
+    height: 45px;
 }
 
 /* INTRO */
@@ -98,7 +101,9 @@ li {
 .projects {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 1300px;
+    background-image: linear-gradient(rgb(7, 6, 20), rgb(38, 35, 56));
 }
 
 .projects-header {
@@ -147,3 +152,11 @@ li {
     background-color: #1F2937;
     font-size: 25px;
 }
+.project:hover {
+    transform: scale(105%);
+}
+
+.project {
+    transition: 0.5s;
+}
+
