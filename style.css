@@ -3,8 +3,9 @@ body {
     flex-direction: column;
     margin: 0px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'arial';
     min-width: 2000px;
+    background-color: #2B2E41;
 }
 
 li {
@@ -49,15 +50,13 @@ li {
     height: 50px;
 }
 
-
-
 /* INTRO */
 
 .intro {
     display: flex;
     flex-direction: row;
-    color: black;
     height: 800px;
+    justify-content: center;
 }
 
 /* LEFT INTRO */
@@ -66,8 +65,8 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    outline: 2px solid red;
+    width: 1400px;
+    text-align: left;
 }
 
 .intro-text-container button {
@@ -80,8 +79,30 @@ li {
 /* RIGHT INTRO */
 
 .intro-scroll-container {
-    outline: 2px solid lime;
-    flex: 1;
+    width: 250px;
+}
+
+/* PROJECTS */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+.projects-header {
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid red;
+}
+
+.projects-upper {
+    outline: 2px solid green;
+
 }
 
 /* FOOTER */
