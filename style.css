@@ -82,6 +82,10 @@ li {
     color: rgb(253, 190, 190);
 }
 
+.intro-text-container p {
+    font-style: italic;
+}
+
 .intro-text-container button {
     height: 60px;
     width: 200px;
@@ -133,13 +137,19 @@ li {
 .project {
     padding: 30px;
     width: 350px;
-    outline: 10px solid rgb(0, 0, 0);
+    outline: 10px solid rgb(2, 3, 20);
     background-color: #1b1929;
     box-shadow: 20px 20px 10px rgb(255, 89, 89);
 }
 
 .project h2 {
     text-align: center;
+}
+
+.projects-container a {
+    text-decoration: none;
+    font-style: none;
+    color: white;
 }
 
 /* FOOTER */
@@ -152,11 +162,18 @@ li {
     background-color: #1F2937;
     font-size: 25px;
 }
+
+/* :HOVERS */
 .project:hover {
     transform: scale(105%);
 }
 
-.project {
+.header h2:hover {
+    transform: scale(120%);
+}
+
+.project, .header h2 {
     transition: 0.5s;
 }
+
 
