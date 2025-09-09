@@ -49,6 +49,41 @@ li {
     height: 50px;
 }
 
+
+
+/* INTRO */
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    height: 800px;
+}
+
+/* LEFT INTRO */
+
+.intro-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid red;
+}
+
+.intro-text-container button {
+    height: 60px;
+    width: 200px;
+    background-color: red;
+    color: white;
+}
+
+/* RIGHT INTRO */
+
+.intro-scroll-container {
+    outline: 2px solid lime;
+    flex: 1;
+}
+
 /* FOOTER */
 
 .footer {
