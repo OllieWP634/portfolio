@@ -3,9 +3,9 @@ body {
     flex-direction: column;
     margin: 0px;
     color: white;
-    font-family: 'monospace';
+    font-family: 'system-ui';
     min-width: 2000px;
-    background-color: rgb(7, 4, 20);
+    background-color: rgb(35, 38, 59);
 }
 
 li {
@@ -89,8 +89,9 @@ li {
 .intro-text-container button {
     height: 60px;
     width: 200px;
-    background-color: rgba(247, 76, 76, 0.856);
-    font-size: 20px;;
+    background-color: rgb(255, 74, 89);
+    font-size: 20px;
+    font-weight: bold;
     color: white;
 }
 
@@ -108,13 +109,12 @@ li {
     justify-content: center;
     height: 1400px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgb(7, 6, 20), rgb(0, 0, 0));
 }
 
 .projects-header {
     text-align: center;
     margin-right: 1480px;
-    color: rgba(247, 76, 76, 0.856);
+    color: rgb(255, 74, 89);
     font-weight: bold;
     font-size: 35px;
 }
@@ -140,9 +140,8 @@ li {
     align-items: center;
     padding: 30px;
     width: 450px;
-    outline: 10px solid rgb(2, 3, 20);
-    background-color: #1b1929;
-    box-shadow: 20px 20px 10px rgb(255, 89, 89);
+    background-color: rgb(42, 44, 64);
+    box-shadow: 20px 20px 10px rgb(23, 24, 36);
 }
 
 .project h2 {
