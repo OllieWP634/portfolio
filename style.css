@@ -89,6 +89,9 @@ a {
     color: white;
     background-color: #121424;
     box-shadow: rgba(0, 0, 0, 0.712) 0px 8px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 0;
 }
 
 .header-individual {
@@ -138,7 +141,7 @@ a {
 }
 
 .about-me-text div {
-    z-index: 1;
+    z-index: 2;
     height: 25px;
     width: 400px;
     background-color: #ff6868;
@@ -147,7 +150,7 @@ a {
 }
 
 .about-me-text h1 {
-    z-index: 2;
+    z-index: 3;
     color: white;
     font-size: 100px;
     font-weight: 400;
@@ -160,6 +163,13 @@ a {
     font-weight: 250;
 }
 
+.line {
+    height: 10px;
+    width: 1600px;
+    background-color: white;
+    margin-top: 70px;
+}
+
 .about-me-images img {
     height: 200px;
     width: auto;
@@ -168,7 +178,7 @@ a {
 .about-me-images {
     display: flex;
     gap: 97px;
-    margin-top: 100px;;
+    margin-top: 70px;
 }
 
 /* PROJECTS */
@@ -176,8 +186,8 @@ a {
 .projects {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 1840px;
+    justify-content: top;
+    height: 1500px;
     padding-bottom: 200px;
 }
 
