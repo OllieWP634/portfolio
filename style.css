@@ -1,3 +1,7 @@
+ html {
+  scroll-behavior: smooth;
+ }
+
 body {
     display: flex;
     flex-direction: column;
@@ -69,6 +73,32 @@ li {
     width: auto;
 }
 
+/* HEADER */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    height: 100px;
+    color: white;
+    background-color: #121424;
+    box-shadow: rgba(0, 0, 0, 0.712) 0px 8px 24px;
+}
+
+.header-individual {
+    display: flex;
+    flex-direction: row;
+    margin-right: 150px;
+    gap: 30px;
+    font-size: 35px;
+}
+
+.header h4 {
+    font-weight: 350;
+    font-size: 45px;
+}
+
 /* ABOUT ME */
 
 .about-me {
@@ -76,9 +106,9 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 1800px;
+    height: 1700px;
     color: #fcbdbd;
-    outline: 2px solid red;
+    outline: 0px solid red;
     gap: 50px;
 }
 
@@ -188,5 +218,3 @@ img:hover {
 .project, img {
     transition: 0.3s;
 }
-
-
