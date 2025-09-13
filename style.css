@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     margin: 0px;
     color: white;
-    font-family: 'system-ui';
+    font-family: 'ubuntu';
     min-width: 2000px;
     background-color: rgb(35, 38, 59);
 }
@@ -12,93 +12,48 @@ li {
     list-style: none;
 }
 
-/* HEADER */
-
-.header {
-    display: flex;
-    background-color: #1F2937;
-    height: 75px;
-    justify-content: center;
-    align-items: center;
-}
-
-.header h1 {
-    text-wrap: nowrap;
-}
-
-.header a {
-    text-decoration: none;
-    font-style: none;
-    color: white;
-}
-
-.left-header {
-    margin-right: 680px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.right-header {
-    margin-left: 680px;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-    gap: 20px;
-}
-
-.right-header img {
-    height: 45px;
-}
-
 /* INTRO */
 
 .intro {
     display: flex;
-    flex-direction: row;
-    height: 800px;
-    justify-content: center;
-    margin-top: 250px;
-}
-
-/* LEFT INTRO */
-
-.intro-text-container {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1485px;
-    text-align: left;
-    font-size: 35px;
+    align-items: center;
+    outline: 2px solid red;
+    text-align: center;
+    height: 1880px;
 }
 
-.intro-text-container h1 {
-    margin: 10;
+.intro h1 {
+    font-size: 100px;
+    font-weight: 10;
+    margin: 10px;
 }
-
-.intro-text-container h2 {
-    margin: 0;
-    color: rgb(253, 190, 190);
-}
-
-.intro-text-container p {
+.intro #msc {
+    color: #fcbdbd;
+    font-size: 100px;
     font-style: italic;
+    margin: 10px;
+    font-weight: 10;
 }
 
-.intro-text-container button {
-    height: 60px;
-    width: 200px;
-    background-color: rgb(255, 74, 89);
-    font-size: 20px;
-    font-weight: bold;
+.intro #intro-line {
+    background-color: white;
+    height: 5px;
     color: white;
+    width: 1235px;
+    margin: 40px;
 }
 
-/* RIGHT INTRO */
+.intro #intro-text {
+    font-size: 100px;
+    font-weight: 10;
+    margin: 10px;
+}
 
-.intro-scroll-container {
-    width: 250px;
+.intro img {
+    margin: 10px;
+    height: 100px;
 }
 
 /* PROJECTS */
