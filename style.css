@@ -50,7 +50,7 @@ a {
     background-color: white;
     height: 5px;
     color: white;
-    width: 1235px;
+    width: 1240px;
     margin: 40px;
 }
 
@@ -91,7 +91,7 @@ a {
     box-shadow: rgba(0, 0, 0, 0.712) 0px 8px 24px;
     position: sticky;
     top: 0;
-    z-index: 0;
+    z-index: 3;
 }
 
 .header-individual {
@@ -115,7 +115,7 @@ a {
     justify-content: top;
     align-items: center;
     padding-top: 200px;
-    height: 1700px;
+    height: 1200px;
     color: #fcbdbd;
     gap: 50px;
 }
@@ -141,7 +141,7 @@ a {
 }
 
 .about-me-text div {
-    z-index: 2;
+    z-index: 0;
     height: 25px;
     width: 400px;
     background-color: #ff6868;
@@ -150,7 +150,7 @@ a {
 }
 
 .about-me-text h1 {
-    z-index: 3;
+    z-index: 1;
     color: white;
     font-size: 100px;
     font-weight: 400;
@@ -257,14 +257,24 @@ a {
 }
 
 /* :HOVERS */
-.project:hover {
-    transform: scale(107%);
-}
 
 img:hover {
-    transform: scale(105%)
+    transform: scale(105%);
 }
 
-.project, img {
+img {
     transition: 0.3s;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-4%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.intro {
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
 }
