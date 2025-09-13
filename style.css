@@ -114,7 +114,6 @@ a {
     padding-top: 200px;
     height: 1700px;
     color: #fcbdbd;
-    outline: 2px solid red;
     gap: 50px;
 }
 
@@ -138,10 +137,20 @@ a {
     width: 700px;
 }
 
+.about-me-text div {
+    z-index: 1;
+    height: 25px;
+    width: 400px;
+    background-color: #ff6868;
+    margin-left: 80px;
+    margin-top: -30px;
+}
+
 .about-me-text h1 {
+    z-index: 2;
     color: white;
     font-size: 100px;
-    font-weight: 150;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -152,13 +161,14 @@ a {
 }
 
 .about-me-images img {
-    height: 250px;
+    height: 200px;
     width: auto;
 }
 
 .about-me-images {
     display: flex;
-    gap: 40px;
+    gap: 97px;
+    margin-top: 100px;;
 }
 
 /* PROJECTS */
