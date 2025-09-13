@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0px;
-    color: white;
     font-family: 'ubuntu';
     min-width: 2000px;
     background-color: rgb(35, 38, 59);
@@ -22,6 +21,7 @@ li {
     align-items: center;
     text-align: center;
     height: 1650px;
+    color: white;
 }
 
 .intro h1 {
@@ -74,9 +74,33 @@ li {
 .about-me {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 1800px;
+    color: #fcbdbd;
     outline: 2px solid red;
+    gap: 50px;
 }
+
+#portrait {
+    height: 500px;
+}
+
+.about-me-text {
+    width: 900px;
+}
+
+.about-me-text h1 {
+    color: #fcbdbd;
+    font-size: 100px;
+}
+
+.about-me-text p {
+    color: white;
+    font-size: 30px;
+}
+
+.experience
 
 /* PROJECTS */
 
