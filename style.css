@@ -69,6 +69,15 @@ li {
     width: auto;
 }
 
+/* ABOUT ME */
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    height: 1800px;
+    outline: 2px solid red;
+}
+
 /* PROJECTS */
 
 .projects {
@@ -148,12 +157,12 @@ li {
     transform: scale(107%);
 }
 
-.header h2:hover {
-    transform: scale(120%);
+img:hover {
+    transform: scale(105%)
 }
 
-.project, .header h2 {
-    transition: 0.5s;
+.project, img {
+    transition: 0.3s;
 }
 
 
