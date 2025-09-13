@@ -6,6 +6,7 @@ body {
     font-family: 'ubuntu';
     min-width: 2000px;
     background-color: rgb(35, 38, 59);
+    background-image: url("./images/background-image.png")
 }
 
 li {
