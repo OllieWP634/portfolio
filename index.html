@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <div class="intro">
+    <div class="intro" id="intro">
         <h1>OLIVER PEERS</h1>
         <h2 id="msc">MSc Computer Science</h2>
         <div id="intro-line"></div>
@@ -17,32 +17,46 @@
     </div>
 
     <div class="intro-button">
-        <a href="#down">
+        <a href="#header">
         <img id="arrow" src="./images/arrow.png">
         </a>
     </div>
 
-    <div class="header" id="down">
+    <div class="header" id="header">
         <div class="header-individual">
-            <h4>Home</h4>
-            <h4>About</h4>
-            <h4>Projects</h4>
+            <a href="#intro"><h4>Home</h4></a>
+            <a href="#header"><h4>About</h4></a>
+            <a href="#projects"><h4>Projects</h4></a>
             <h4>Contact</h4>
         </div>
     </div>
 
-    <div class="about-me">
-        <img id="portrait" src="./images/portrait.jpg">
-        <div class="about-me-text">
-            <h1>About Me</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis expedita quam id tempore quae, beatae ipsa eos porro incidunt nam, ex perferendis illum quia dolor nisi deleniti tenetur impedit ipsum.</p>
-            <div class="experience">
+    <div class="about-me" id="about-me">
+        <div class="about-me-main">
 
+            <div class="about-me-text">
+                <h1>About Me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis expedita quam id tempore quae, beatae ipsa eos porro incidunt nam, ex perferendis illum quia dolor nisi deleniti tenetur impedit ipsum.</p>
             </div>
+
+            <div class="about-me-portrait">
+                <img id="portrait" src="./images/portrait.jpg">
+            </div>
+
+        </div>
+        
+
+        <div class="about-me-images">
+            <img src="./images/javascript.png">
+            <img src="./images/css.png">
+            <img src="./images/html.png">
+            <img src="./images/python.png">
+            <img src="./images/bash.png">
+            <img src="./images/matlab.png">
         </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
         <div class="projects-header">
             <h2>Projects</h2>
         </div>
@@ -79,13 +93,11 @@
                 <a class="project">
                     <h2>Etch-a-Sketch</h2>
                     <p>Javascript project, etch-a-sketch with custom UI</p>
-                    <img id="javascript" src="./images/javascript.png">
                 </a>
 
                 <a href="../rock-paper-scissors/index.html" class="project">
                     <h2>Rock Paper Scissors</h2>
                     <p>Javascript project, rock paper scissors game - 5 rounds to beat the computer with custom UI</p>
-                    <img id="javascript" src="./images/javascript.png">
                 </a>
                 
             </div>

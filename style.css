@@ -16,6 +16,11 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* INTRO */
 
 .intro {
@@ -103,13 +108,24 @@ li {
 
 .about-me {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: top;
     align-items: center;
+    padding-top: 200px;
     height: 1700px;
     color: #fcbdbd;
-    outline: 0px solid red;
+    outline: 2px solid red;
     gap: 50px;
+}
+
+.about-me-main {
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+}
+
+.about-me-portrait {
+    align-content: center;
 }
 
 #portrait {
@@ -117,20 +133,33 @@ li {
 }
 
 .about-me-text {
-    width: 900px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
 }
 
 .about-me-text h1 {
-    color: #fcbdbd;
+    color: white;
     font-size: 100px;
+    font-weight: 150;
+    margin: 0;
 }
 
 .about-me-text p {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 250;
 }
 
-.experience
+.about-me-images img {
+    height: 250px;
+    width: auto;
+}
+
+.about-me-images {
+    display: flex;
+    gap: 40px;
+}
 
 /* PROJECTS */
 
