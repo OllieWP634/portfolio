@@ -20,9 +20,8 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    outline: 2px solid red;
     text-align: center;
-    height: 1880px;
+    height: 1650px;
 }
 
 .intro h1 {
@@ -52,9 +51,22 @@ li {
     margin: 10px;
 }
 
-.intro img {
+.intro #github-logo {
     margin: 10px;
     height: 100px;
+    width: auto;
+}
+
+.intro-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+}
+
+.intro-button #arrow {
+    height: 90px;
+    width: auto;
 }
 
 /* PROJECTS */
@@ -63,14 +75,14 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 1800px;
+    height: 1840px;
     padding-bottom: 200px;
 }
 
 .projects-header {
     text-align: center;
     margin-right: 1520px;
-    color: rgb(255, 74, 89);
+    color: #fcbdbd;
     font-weight: bold;
     font-size: 35px;
 }
