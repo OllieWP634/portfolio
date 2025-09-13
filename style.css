@@ -104,6 +104,7 @@ a {
 .header h4 {
     font-weight: 350;
     font-size: 45px;
+    margin: 0;
 }
 
 /* ABOUT ME */
@@ -284,9 +285,13 @@ img {
     transition: 0.3s;
 }
 
-@keyframes slideInFromLeft {
+.header-individual a:hover {
+    color: #fcbdbd;
+}
+
+@keyframes slideInFromTop{
     0% {
-        transform: translateY(-4%);
+        transform: translateY(-10%);
     }
     100% {
         transform: translateY(0);
@@ -294,5 +299,5 @@ img {
 }
 
 .intro {
-    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+    animation: 1.5s ease-out 0s 1 slideInFromTop;
 }
