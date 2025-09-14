@@ -3,12 +3,10 @@
  }
 
 body {
+    color: white;
     display: flex;
     flex-direction: column;
-    margin: 0px;
     font-family: 'ubuntu';
-    min-width: 2000px;
-    background-color: rgb(35, 38, 59);
     background-image: url("./images/background-image.png")
 }
 
@@ -24,282 +22,75 @@ a {
 /* INTRO */
 
 .intro {
+    outline: 2px solid red;
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 1650px;
-    color: white;
+    height: 90vh;
+    width: 100%;
+    text-wrap: none;
+    flex-shrink: 0;
 }
 
 .intro h1 {
-    font-size: 100px;
     font-weight: 10;
-    margin: 10px;
+    font-size: 5vw;
+    margin: 0em;
 }
-.intro #msc {
+
+.intro h2 {
+    font-weight: 10;
+    font-size: 5vw;
+    margin: 0.4em;
+}
+
+#msc {
     color: #fcbdbd;
-    font-size: 100px;
     font-style: italic;
-    margin: 10px;
-    font-weight: 10;
+    margin: 0.4em;
 }
 
-.intro #intro-line {
+#intro-line {
     background-color: white;
-    height: 5px;
-    width: 1240px;
-    margin: 40px;
+    width: 62vw;
+    height: 0.2em;
+    margin: 0.4em;
 }
 
-.intro #intro-text {
-    font-size: 100px;
-    font-weight: 10;
-    margin: 10px;
-}
-
-.intro #github-logo {
-    margin: 10px;
-    height: 100px;
-    width: auto;
+#github-logo {
+    max-height: 7em;
 }
 
 .intro-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 190px;
+    height: 10vh;
 }
 
-.intro-button #arrow {
-    height: 90px;
+#arrow {
+    max-height: 5vh;
     width: auto;
 }
 
-/* HEADER */
-
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-    height: 100px;
-    color: white;
-    background-color: #181224;
-    box-shadow: rgba(0, 0, 0, 0.712) 0px 8px 24px;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-}
-
-.header-individual {
-    display: flex;
-    flex-direction: row;
-    margin-right: 150px;
-    gap: 30px;
-    font-size: 35px;
-}
-
-.header h4 {
-    font-weight: 350;
-    font-size: 45px;
-    margin: 0;
-}
-
-/* ABOUT ME */
-
-.about-me {
-    background-image: url("./images/background-image-2.png");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 325px;
-    height: 1300px;
-    color: #fcbdbd;
-    gap: 50px;
-}
-
-.about-me-main {
-    display: flex;
-    flex-direction: row;
-    gap: 400px;
-}
-
-.about-me-portrait {
-    align-content: center;
-}
-
-#portrait {
-    height: 500px;
-}
-
-.about-me-text {
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-}
-
-.about-me-text div {
-    z-index: 0;
-    height: 25px;
-    width: 400px;
-    background-color: #ff6868;
-    margin-left: 80px;
-    margin-top: -30px;
-}
-
-.about-me-text h1 {
-    z-index: 1;
-    color: white;
-    font-size: 100px;
-    font-weight: 400;
-    margin: 0;
-}
-
-.about-me-text p {
-    color: white;
-    font-size: 40px;
-    font-weight: 250;
-}
-
-.line {
-    height: 5px;
-    width: 1600px;
-    background-color: white;
-    margin-top: 70px;
-}
-
-.about-me-images img {
-    height: 200px;
-    width: auto;
-}
-
-.about-me-images {
-    display: flex;
-    gap: 97px;
-    margin-top: 70px;
-}
-
-/* PROJECTS */
-
-.projects {
-    background-image: url("./images/background-image-2.png");
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    height: 1500px;
-    padding-bottom: 200px;
-    padding-top: 200px;
-}
-
-.projects-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-right: 1370px;
-    color: white;
-}
-
-.projects-header h1 {
-    z-index: 1;
-    font-weight: 400;
-    font-size: 100px;
-}
-
-.underscore-2 {
-    z-index: 0;
-    height: 25px;
-    width: 320px;
-    background-color: #ff6868;
-    margin-left: 120px;
-    margin-top: -95px;
-    margin-bottom: 100px;
-}
-
-.projects-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 100px;
-}
-
-.projects-upper, .projects-lower {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 100px;
-    height: 500px;
-}
-
-.project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    width: 450px;
-    background-color: rgb(42, 44, 64);
-    box-shadow: rgba(0, 0, 0, 0.74) 0px 7px 29px 0px;
-}
-
-.project h2 {
-    font-size: 28px;
-    text-align: center;
-}
-
-.projects-container a {
-    text-decoration: none;
-    font-style: none;
-    color: white;
-}
-
-.project img {
-    height: 300px;
-    width: 320px;
-}
-
-#javascript {
-    width: 600px;
-}
-
-/* FOOTER */
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75px;
-    background-color: #181224;
-    color: white;
-    font-size: 25px;
-}
-
-/* :HOVERS */
-
-img:hover {
-    transform: scale(105%);
-}
-
-img {
-    transition: 0.3s;
-}
-
-.header-individual a:hover {
-    color: #fcbdbd;
-}
-
-@keyframes slideInFromTop{
-    0% {
-        transform: translateY(-10%);
+@media (max-width: 800px) {
+    .intro h1 {
+        font-size: 9vw;
     }
-    100% {
-        transform: translateY(0);
+    .intro h2 {
+        font-size: 7vw;
+    }
+    #intro-line {
+        width: 86vw;
+        height: 0.05em;
+    }
+    #github-logo {
+        max-height: 2.5em;
+    }
+    #arrow {
+        max-height: 2.5em;
     }
 }
 
-.intro {
-    animation: 1.5s ease-out 0s 1 slideInFromTop;
-}
