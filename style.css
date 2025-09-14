@@ -110,11 +110,12 @@ a {
 /* ABOUT ME */
 
 .about-me {
+    background-image: url("./images/background-image-2.png");
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: center;
     align-items: center;
-    padding-top: 400px;
+    padding-top: 325px;
     height: 1300px;
     color: #fcbdbd;
     gap: 50px;
@@ -184,6 +185,7 @@ a {
 /* PROJECTS */
 
 .projects {
+    background-image: url("./images/background-image-2.png");
     display: flex;
     flex-direction: column;
     justify-content: top;
