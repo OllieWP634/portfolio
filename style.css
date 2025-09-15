@@ -9,6 +9,7 @@ body {
     font-family: 'ubuntu';
     background-image: url("./images/background-image.png");
     background-size: 20%;
+    margin: 0;
 }
 
 li {
@@ -106,19 +107,43 @@ html {
     max-height: 7em;
 }
 
+@keyframes slideInFromTop{
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.intro {
+    animation: 1.5s ease-out 0s 1 slideInFromTop;
+}
+
 /* HEADER */
 
 .header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    background-color: #181224;
+    box-shadow: rgba(0, 0, 0, 0.712) 0px 8px 24px;
+    position: sticky;
+    top: 0;
+    margin:0;
+    height: 10rem;
+    z-index: 9999999;
 }
 
 .header-individual {
     display: flex;
     flex-direction: row;
+    font-size: 4rem;
+    gap: 3rem;
+    margin-right: 4rem;
 }
 
-.header-individual h4 { /* Header text */
-    font-size: 2.5vw;
+.header-individual a:hover {
+    color: #fcbdbd;
 }
