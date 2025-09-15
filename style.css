@@ -7,7 +7,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'ubuntu';
-    background-image: url("./images/background-image.png")
+    background-image: url("./images/background-image.png");
+    background-size: 20%;
 }
 
 li {
@@ -19,43 +20,74 @@ a {
     color: white;
 }
 
+html {
+    font-size: 45%;
+}
+
+@media (max-width: 1500px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 35%;
+    }
+}
+
+@media (max-width: 770px) {
+    html {
+        font-size: 30%;
+    }
+}
+@media (max-width: 615px) {
+    html {
+        font-size: 28%;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 25%;
+    }
+}
+
 /* INTRO */
 
 .intro {
-    outline: 2px solid red;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
     height: 90vh;
-    width: 100%;
     text-wrap: none;
     flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .intro h1 {
     font-weight: 10;
-    font-size: 5vw;
-    margin: 0em;
+    font-size: 6rem;
+    margin: 0;
 }
 
 .intro h2 {
     font-weight: 10;
-    font-size: 5vw;
-    margin: 0.4em;
-}
-
-#msc {
-    color: #fcbdbd;
-    font-style: italic;
+    font-size: 6rem;
     margin: 0.4em;
 }
 
 #intro-line {
     background-color: white;
-    width: 62vw;
-    height: 0.2em;
+    height: 0.1%;
+    width: 75rem;
+}
+
+#msc {
+    color: #fcbdbd;
+    font-style: italic;
     margin: 0.4em;
 }
 
@@ -71,26 +103,22 @@ a {
 }
 
 #arrow {
-    max-height: 5vh;
-    width: auto;
+    max-height: 7em;
 }
 
-@media (max-width: 800px) {
-    .intro h1 {
-        font-size: 9vw;
-    }
-    .intro h2 {
-        font-size: 7vw;
-    }
-    #intro-line {
-        width: 86vw;
-        height: 0.05em;
-    }
-    #github-logo {
-        max-height: 2.5em;
-    }
-    #arrow {
-        max-height: 2.5em;
-    }
+/* HEADER */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
+.header-individual {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-individual h4 { /* Header text */
+    font-size: 2.5vw;
+}
