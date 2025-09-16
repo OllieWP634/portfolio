@@ -25,9 +25,17 @@ html {
     font-size: 45%;
 }
 
+.about-me-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
 .about-me-images img {
     max-width: 25rem;
-    height: auto;
+    height: 25rem
 }
 
 @media (max-width: 1500px) {
@@ -36,7 +44,7 @@ html {
     }
     .about-me-images img {
         width: 12rem;
-        height: 12rem;
+        height: 11rem;
     }
 }
 
@@ -44,11 +52,19 @@ html {
     html {
         font-size: 40%;
     }
+    .about-me-images img {
+        width: 11rem;
+        height: 10rem;
+    }
 }
 
 @media (max-width: 1000px) {
     html {
         font-size: 37.5%;
+    }
+    .about-me-images img {
+        width: 10rem;
+        height: 9rem;
     }
 }
 
@@ -56,16 +72,32 @@ html {
     html {
         font-size: 35%;
     }
+    .about-me-images img {
+        width: 9rem;
+        height: 8rem;
+    }
 }
 @media (max-width: 615px) {
     html {
         font-size: 28%;
+    }
+    .about-me-images img {
+        width: 18rem;
+        height: 17rem;
+    }
+    .about-me-images {
+        outline:2px solid red;
+        width: 80vw;
     }
 }
 
 @media (max-width: 350px) {
     html {
         font-size: 25%;
+    }
+    .about-me-images img {
+        width: 12rem;
+        height: 11rem;
     }
 }
 
@@ -224,17 +256,21 @@ html {
     font-weight: 250;
 }
 
-.about-me-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60vw;
-    justify-content: space-between;
-    margin-top: 70px;
-}
-
 /* PROJECTS */
 
 .projects {
     background-image: url("./images/background-image-2.png");
     background-size: 20%;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: #181224;
+    box-shadow: rgba(0, 0, 0, 0.712) 0px 8px 24px;
+    font-size: 1.5rem;
 }
