@@ -25,21 +25,36 @@ html {
     font-size: 45%;
 }
 
+.about-me-images img {
+    max-width: 25rem;
+    height: auto;
+}
+
 @media (max-width: 1500px) {
     html {
-        font-size: 40%;
+        font-size: 42.5%;
+    }
+    .about-me-images img {
+        width: 12rem;
+        height: 12rem;
     }
 }
 
 @media (max-width: 1200px) {
     html {
-        font-size: 35%;
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 37.5%;
     }
 }
 
 @media (max-width: 770px) {
     html {
-        font-size: 30%;
+        font-size: 35%;
     }
 }
 @media (max-width: 615px) {
@@ -132,18 +147,94 @@ html {
     position: sticky;
     top: 0;
     margin:0;
-    height: 10rem;
+    height: 8rem;
     z-index: 9999999;
 }
 
 .header-individual {
     display: flex;
     flex-direction: row;
-    font-size: 4rem;
+    font-size: 3rem;
     gap: 3rem;
     margin-right: 4rem;
 }
 
 .header-individual a:hover {
     color: #fcbdbd;
+}
+
+/* ABOUT ME */
+
+.about-me {
+    background-image: url("./images/background-image-2.png");
+    background-size: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fcbdbd;
+}
+
+.about-me-main {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 21rem;
+    flex-wrap: wrap;
+}
+
+.about-me-portrait {
+    align-content: center;
+}
+
+#portrait {
+    max-height: 30em;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    font-size: 3rem;
+}
+
+.about-me-text div {
+    z-index: 0;
+    height: 2rem;
+    width: 25rem;
+    background-color: #ff6868;
+    margin-left: 6rem;
+    margin-top: -3rem;
+}
+
+.about-me-text h1 {
+    z-index: 1;
+    color: white;
+    font-size: 6rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.about-me-text p {
+    color: white;
+    font-size: 3rem;
+    font-weight: 250;
+}
+
+.about-me-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+/* PROJECTS */
+
+.projects {
+    background-image: url("./images/background-image-2.png");
+    background-size: 20%;
 }
