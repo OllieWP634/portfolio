@@ -236,10 +236,10 @@ html {
 .about-me-text div {
     z-index: 0;
     height: 2rem;
-    width: 25rem;
+    width: 22.5rem;
     background-color: #ff6868;
     margin-left: 6rem;
-    margin-top: -3rem;
+    margin-top: -2.5rem;
 }
 
 .about-me-text h1 {
@@ -268,7 +268,30 @@ html {
     height: 100vh;
 }
 
+.projects-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
 
+.projects-header h1 {
+    z-index: 1;
+    font-weight: 400;
+    font-size: 6rem;
+    margin: 0;
+}
+
+.underscore-2 {
+    z-index: 0;
+    height: 2rem;
+    width: 19rem;
+    background-color: #ff6868;
+    margin-left: 9rem;
+    margin-top: -2.2rem;
+}
 
 /* FOOTER */
 
@@ -280,4 +303,14 @@ html {
     background-color: #181224;
     box-shadow: rgba(0, 0, 0, 0.712) 0px 8px 24px;
     font-size: 1.5rem;
+}
+
+/* :HOVERS */
+
+img:hover {
+    transform: scale(105%);
+}
+
+img {
+    transition: 0.3s;
 }
