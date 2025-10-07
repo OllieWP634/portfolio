@@ -85,15 +85,31 @@ html {
         width: 18rem;
         height: 17rem;
     }
-    .about-me-images {
-        outline:2px solid red;
-        width: 80vw;
-    }
 }
 
 @media (max-width: 350px) {
     html {
         font-size: 25%;
+    }
+    .about-me-images img {
+        width: 12rem;
+        height: 11rem;
+    }
+}
+
+@media (max-width: 300px) {
+    html {
+        font-size: 20%;
+    }
+    .about-me-images img {
+        width: 12rem;
+        height: 11rem;
+    }
+}
+
+@media (max-width: 250px) {
+    html {
+        font-size: 15%;
     }
     .about-me-images img {
         width: 12rem;
