@@ -1,4 +1,4 @@
-# Hi, I'm Oliver Peers
+# Oliver Peers - Portfolio
 
 I'm an MSc Computer Science student at the University of Liverpool with a First-Class background in Civil Engineering. I’m passionate about applying analytical problem-solving to real-world software challenges — from data processing and algorithm design to front-end development.
 
