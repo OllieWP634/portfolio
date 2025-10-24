@@ -270,15 +270,6 @@ html {
     font-size: 3rem;
 }
 
-.about-me-text div {
-    z-index: 0;
-    height: 2rem;
-    width: 22.5rem;
-    background-color: #ff6868;
-    margin-left: 6rem;
-    margin-top: -2.5rem;
-}
-
 .about-me-text h1 {
     z-index: 1;
     color: white;
@@ -312,22 +303,13 @@ html {
     align-items: center;
     text-align: center;
     color: white;
+    max-width: 60vw;
 }
 
 .projects-header h1 {
-    z-index: 1;
-    font-weight: 400;
+    font-weight: 10;
     font-size: 6rem;
     margin: 0;
-}
-
-.underscore-2 {
-    z-index: 0;
-    height: 2rem;
-    width: 19rem;
-    background-color: #ff6868;
-    margin-left: 9rem;
-    margin-top: -2.2rem;
 }
 
 .projects-container {
@@ -350,8 +332,7 @@ html {
     transition: 0.5s;
     flex: 1 1 30rem;
     outline: 0.5rem solid white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    filter: opacity(65%);
+    filter: opacity(60%);
 }
 
 #dissertation {
@@ -369,7 +350,7 @@ html {
 }
 
 .project:hover {
-    transform: scale(104%);
+    transform: translateY(-2rem);
     filter: opacity(100%);
 }
 
