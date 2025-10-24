@@ -273,14 +273,15 @@ html {
 .about-me-text h1 {
     z-index: 1;
     color: white;
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: 400;
     margin: 0;
+    margin-bottom: 5rem;
 }
 
 .about-me-text p {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 250;
 }
 
@@ -308,7 +309,7 @@ html {
 
 .projects-header h1 {
     font-weight: 10;
-    font-size: 6rem;
+    font-size: 3rem;
     margin: 0;
 }
 
