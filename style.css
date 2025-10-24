@@ -330,6 +330,65 @@ html {
     margin-top: -2.2rem;
 }
 
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 10rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: left;
+    text-align: left;
+    padding: 3.5rem;
+    height: 50rem;
+    width: 45rem;
+    border-radius: 3rem;
+    transition: 0.5s;
+    flex: 1 1 30rem;
+    outline: 0.5rem solid white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project {
+    background-image: url(./images/background-image.png);
+    background-size: 20%;
+}
+
+.project:hover {
+    color: #797fc8;
+    transform: scale(104%);
+}
+
+.project h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.project h3 {
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+.skills {
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.skills p {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-weight: 1000;
+}
+
 /* FOOTER */
 
 .footer {
