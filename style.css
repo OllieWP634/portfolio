@@ -224,6 +224,17 @@ html {
     color: #fcbdbd;
 }
 
+.fade-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 2s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .about-me-main {
     justify-content: center;
     align-items: center;
@@ -298,11 +309,22 @@ html {
 
 .about-me-text h1 {
     z-index: 1;
-    color: white;
     font-size: 6rem;
-    font-weight: 400;
     margin: 0;
     margin-bottom: 3rem;
+    background: linear-gradient(90deg, #ff9999, #ffffff, #ff6868, #ff9999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    letter-spacing: 3px;
+    text-shadow: 0 0 30px rgba(255, 153, 153, 0.637);
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% {background-position: 100% 50%;}
+  100% { background-position: 0% 50%; }
 }
 
 .about-me-text p {
