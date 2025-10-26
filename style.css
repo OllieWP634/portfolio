@@ -119,6 +119,7 @@ html {
     display: none; /* hide background shape on small screens if it misaligns */
   }
 }
+
 @media (max-width: 615px) {
     html {
         font-size: 28%;
@@ -142,6 +143,25 @@ html {
         font-size: 15%;
     }
 }
+
+@media (max-width: 200px) {
+    html {
+        font-size: 12.5%;
+    }
+}
+
+@media (max-width: 160px) {
+    html {
+        font-size: 10%;
+    }
+}
+
+@media (max-width: 140px) {
+    html {
+        font-size: 7.5%;
+    }
+}
+
 
 /* INTRO */
 
