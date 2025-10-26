@@ -191,7 +191,7 @@ html {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    background-color: #181224;
+    background-color: #00000036;
     box-shadow: rgba(0, 0, 0, 0.712) 0px 8px 24px;
     position: sticky;
     top: 0;
@@ -238,36 +238,87 @@ html {
 
 .about-me-portrait {
     display: flex;
-    align-items: end;
+    align-items: center;
+}
+
+.about-me-portrait img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 #portrait {
-    max-height: 37em;
+    height: 80em;
+    width: 50em;
+    border: 1rem solid transparent;
+    border-radius: 5rem;
+    background: linear-gradient(135deg, #ff9999, #ffffff);
+    animation: glowPulse 2s ease-in-out infinite alternate;
 }
 
 .about-me-text {
     display: flex;
     flex-direction: column;
-    width: 60rem;
-    font-size: 3rem;
+    justify-content: center;
+    width: 70rem;
 }
 
 .about-me-text h1 {
     z-index: 1;
     color: white;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 5rem;
     text-shadow: 2px 2px 2px #ff6868, 2.5px 2.5px 2px #ff6868;
 }
 
 .about-me-text p {
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 250;
     margin-bottom: 1rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 0 8px rgba(255,255,255,0.2);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.116), 0 0 8px rgba(255, 255, 255, 0.493);
+}
+
+#about-me-text-2 {
+    color: rgb(179, 179, 179);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.116), 0 0 8px rgba(255, 255, 255, 0.493);
+}
+
+.about-me-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#about-me-line {
+    flex: 1;
+    background: linear-gradient(135deg, #ff9999, #ffffff);
+    animation: glowPulse 2s ease-in-out infinite alternate;
+    height: 1rem;
+    margin-top: 1.2rem;
+}
+
+#about-me-line-reverse {
+    flex: 1;
+    background: linear-gradient(135deg, #ff9999, #ffffff);
+    animation: glowPulse 2s ease-in-out infinite alternate;
+    height: 1rem;
+    margin-top: 1.2rem;
+}
+
+#about-me-line-2 {
+    background: linear-gradient(135deg, #ff9999, #ffffff);
+    animation: glowPulse 2s ease-in-out infinite alternate;
+    height: 1rem;
+    margin-top: 3rem;
+}
+
+@keyframes glowPulse {
+  from { box-shadow: 0 0 2px #ffffff, 0 0 2px #ff9999; }
+  to { box-shadow: 0 0 2px #ffffff, 0 0 20px #ff9999; }
 }
 
 /* PROJECTS */
