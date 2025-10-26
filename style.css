@@ -92,6 +92,32 @@ html {
     html {
         font-size: 35%;
     }
+    .about-me-main {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .about-me-portrait {
+    margin-top: 4rem;
+  }
+
+  .about-me-text h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .about-me-text p {
+    font-size: 1.6rem;
+  }
+
+  .about-me-attach {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #portrait-square {
+    display: none; /* hide background shape on small screens if it misaligns */
+  }
 }
 @media (max-width: 615px) {
     html {
@@ -257,13 +283,13 @@ html {
 
 .about-me-portrait img {
     object-fit: cover;
-    object-position: 65%;
     padding: 2rem;
 }
 
 #portrait {
-    height: 70em;
-    width: 40em;
+    height: auto;
+    width: 100%;
+    max-width: 50rem;
     border-radius: 5rem;
     background-color: #00000065;
     outline: 0.5rem solid #ff9999;
@@ -276,7 +302,7 @@ html {
     width: 20em;
     border-radius: 3rem;
     background: #ff6868;
-    margin-left: 29em;
+    margin-left: 40em;
     margin-top: -17em;
     z-index: 1;
 }
