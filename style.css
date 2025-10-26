@@ -220,7 +220,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     color: #fcbdbd;
 }
 
@@ -287,7 +287,8 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90rem;
+    width: 100%;
+    max-width: 90rem;
 }
 
 .about-me-p {
@@ -379,7 +380,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .projects-header {
