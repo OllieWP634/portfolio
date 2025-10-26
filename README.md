@@ -5,7 +5,7 @@ I'm an MSc Computer Science student at the University of Liverpool with a First-
 ### Current Focus
 Seeking a Software Engineering or Data Science placement (2025-2026) to apply my skills in Python, JavaScript, and large-scale data systems, while contributing to efficient, scalable software solutions.
 
-### 💻 Technical Skills
+### Technical Skills
 - **Languages:** Python, JavaScript, C, SQL, HTML, CSS  
 - **Frameworks & Tools:** React, TensorFlow, Spark, Pandas, Git  
 - **Focus Areas:** Software Development, Algorithmic Design, Data Systems, HPC Workflows
