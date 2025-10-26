@@ -394,12 +394,17 @@ html {
 
 .projects-header h1 {
     z-index: 1;
-    color: white;
     font-size: 6rem;
-    font-weight: 400;
     margin: 0;
     margin-top: 6rem;
     margin-bottom: 5rem;
+    background: linear-gradient(90deg, #ff9999, #ffffff, #ff6868, #ff9999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    letter-spacing: 3px;
+    text-shadow: 0 0 30px rgba(255, 153, 153, 0.637);
+    animation: gradientShift 8s ease infinite;
 }
 
 .projects-container {
@@ -409,10 +414,6 @@ html {
     justify-content: center;
     align-items: stretch;
     gap: 8rem;
-    background-color: #00000065;
-    outline: 0.5rem solid #ff9999;
-    box-shadow: 0 0 10px rgba(255, 153, 153, 0.6), 0 0 25px rgba(255, 153, 153, 0.3);
-    border-radius: 3rem;
     padding: 8rem;
     margin-bottom: 10rem;
 }
