@@ -414,11 +414,13 @@ html {
 #portfolio {
     background-image: url(./images/portfolio.png);
     background-size: 100%;
+    background-position: center -6rem;
 }
 
 #dashboard {
     background-image: url(./images/database.jpg);
     background-size: 200%;
+    background-position: center -6rem;
     filter: grayscale(80%) brightness(0.6) contrast(1.2) saturate(0.6);
 }
 
@@ -448,10 +450,10 @@ html {
 
 .skills p {
     outline: 0.2rem solid white;
-    background-color: rgba(255, 255, 255, 0.145);
     padding: 1rem;
     border-radius: 1.5rem;
     font-weight: 1000;
+    background-color: #00000036;
 }
 
 /* FOOTER */
