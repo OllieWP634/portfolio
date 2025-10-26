@@ -48,14 +48,13 @@ html {
 }
 
 #particles-js {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  z-index: -1;
-  pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    pointer-events: none;
 }
 
 .about-me-images {
@@ -226,41 +225,76 @@ html {
 }
 
 .about-me-main {
-    margin-right: 2rem;
-    margin-left: 2rem;
     justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 21rem;
+    gap: 8rem;
     flex-wrap: wrap;
-    padding: 3rem;
+    margin-top: 7rem;
 }
+
+/* PORTRAIT */
 
 .about-me-portrait {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
 }
 
 .about-me-portrait img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    padding: 2rem;
 }
 
 #portrait {
-    height: 80em;
-    width: 50em;
-    border: 1rem solid transparent;
+    height: 70em;
+    width: 40em;
     border-radius: 5rem;
-    background: linear-gradient(135deg, #ff9999, #ffffff);
-    animation: glowPulse 2s ease-in-out infinite alternate;
+    background-color: #00000065;
+    outline: 0.5rem solid #ff9999;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(255, 153, 153, 0.6), 0 0 25px rgba(255, 153, 153, 0.3);
 }
+
+#portrait-square {
+    height: 20em;
+    width: 20em;
+    border-radius: 3rem;
+    background: #ff6868;
+    margin-left: 29em;
+    margin-top: -17em;
+    z-index: 1;
+}
+
+/* MAIN TEXT */
 
 .about-me-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70rem;
+    width: 90rem;
+}
+
+.about-me-p {
+    outline: 0.5rem solid #ff9999;
+    background-color: #00000065;
+    border-radius: 3rem;
+    padding: 4rem;
+    margin-top: 0;
+    box-shadow: 0 0 10px rgba(255, 153, 153, 0.6), 0 0 25px rgba(255, 153, 153, 0.3);
+}
+
+#about-me-line {
+    flex: auto;
+    height: 0.1rem;
+    background-color: #ffffff;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .about-me-text h1 {
@@ -269,51 +303,41 @@ html {
     font-size: 6rem;
     font-weight: 400;
     margin: 0;
-    text-shadow: 2px 2px 2px #ff6868, 2.5px 2.5px 2px #ff6868;
+    margin-bottom: 3rem;
 }
 
 .about-me-text p {
     color: white;
     font-size: 3rem;
-    font-weight: 250;
-    margin-bottom: 1rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.116), 0 0 8px rgba(255, 255, 255, 0.493);
+    font-weight: 300;
+    margin-top: 0;
 }
 
 #about-me-text-2 {
-    color: rgb(179, 179, 179);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.116), 0 0 8px rgba(255, 255, 255, 0.493);
+    color: rgb(221, 221, 221);
 }
 
-.about-me-line {
+/* CONTACT INFO */
+
+.about-me-attach {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    gap: 10rem;
+    color: white;
 }
 
-#about-me-line {
-    flex: 1;
-    background: linear-gradient(135deg, #ff9999, #ffffff);
-    animation: glowPulse 2s ease-in-out infinite alternate;
-    height: 1rem;
-    margin-top: 1.2rem;
-}
-
-#about-me-line-reverse {
-    flex: 1;
-    background: linear-gradient(135deg, #ff9999, #ffffff);
-    animation: glowPulse 2s ease-in-out infinite alternate;
-    height: 1rem;
-    margin-top: 1.2rem;
-}
-
-#about-me-line-2 {
-    background: linear-gradient(135deg, #ff9999, #ffffff);
-    animation: glowPulse 2s ease-in-out infinite alternate;
-    height: 1rem;
+.about-me-attach h4 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
     margin-top: 3rem;
+}
+
+.about-me-attach h5 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 @keyframes glowPulse {
@@ -344,17 +368,28 @@ html {
 }
 
 .projects-header h1 {
-    font-weight: 10;
-    font-size: 5rem;
+    z-index: 1;
+    color: white;
+    font-size: 6rem;
+    font-weight: 400;
     margin: 0;
-    text-shadow: 2px 2px 2px #ff6868, 2.5px 2.5px 2px #ff6868;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
 }
 
 .projects-container {
+    width: 80vw;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
+    align-items: stretch;
     gap: 8rem;
-    margin-top: 10rem;
+    background-color: #00000065;
+    outline: 0.5rem solid #ff9999;
+    box-shadow: 0 0 10px rgba(255, 153, 153, 0.6), 0 0 25px rgba(255, 153, 153, 0.3);
+    border-radius: 3rem;
+    padding: 8rem;
+    margin-bottom: 10rem;
 }
 
 .project {
@@ -365,7 +400,6 @@ html {
     text-align: left;
     padding: 3.5rem;
     height: 50rem;
-    width: 45rem;
     border-radius: 3rem;
     transition: transform 0.3s ease, filter 0.8s ease, outline 0.3s ease;
     flex: 1 1 30rem;
@@ -427,7 +461,7 @@ html {
     justify-content: center;
     align-items: center;
     height: 5rem;
-    background-color: #181224;
+    background-color: #00000036;
     box-shadow: rgba(0, 0, 0, 0.712) 0px 8px 24px;
     font-size: 1.5rem;
 }
@@ -435,9 +469,10 @@ html {
 /* :HOVERS */
 
 img:hover {
-    transform: scale(105%);
+    transform: translateY(10%);
 }
 
 img {
-    transition: 0.3s;
+    transition: 0.5s ease;
 }
+
