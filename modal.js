@@ -13,7 +13,7 @@ const projects = {
     img: "images/dissertation.jpg",
     description:
       "This project used synthetic ADM1 data to train neural networks for biokinetic parameter calibration. The final model, Ver57, achieved an MSE of 4.01E-07, showcasing the potential of data-driven modelling in anaerobic digestion.",
-    link: "https://github.com/YourGitHubUsername/dissertation"
+    link: "https://github.com/ollieWP634"
   },
   portfolio: {
     title: "Portfolio Website",
@@ -21,7 +21,7 @@ const projects = {
     img: "images/portfolio.jpg",
     description:
       "A fully responsive, animated personal portfolio built using HTML, CSS, and JavaScript. Features include particle animations, scroll-triggered fades, and custom modals for project showcases.",
-    link: "https://yourusername.github.io/"
+    link: "https://olliewp634.github.io/portfolio"
   },
   dashboard: {
     title: "Data Dashboard",
@@ -29,7 +29,7 @@ const projects = {
     img: "images/dashboard.jpg",
     description:
       "A real-time Streamlit dashboard for visualizing large datasets using Pandas and Python. Includes interactive charts, performance insights, and automated metric updates.",
-    link: "https://github.com/YourGitHubUsername/dashboard"
+    link: "https://github.com/olliewp634"
   }
 };
 
