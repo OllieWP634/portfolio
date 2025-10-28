@@ -116,7 +116,7 @@ html {
   }
 
   #portrait-square {
-    display: none; /* hide background shape on small screens if it misaligns */
+    display: none;
   }
 }
 
