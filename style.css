@@ -487,7 +487,7 @@ html {
 #portfolio {
     background-image: url(./images/portfolio.png);
     background-size: 100%;
-    background-position: center -6rem;
+    background-position: center -3rem;
 }
 
 #dashboard {
@@ -527,6 +527,105 @@ html {
     border-radius: 1.5rem;
     font-weight: 1000;
     background-color: #00000036;
+}
+
+/* MODAL PROJECTS */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+#modal-title {
+    font-size: 5rem;
+} 
+
+#modal-subtitle {
+    font-size: 4rem;
+}
+
+#modal-description {
+    font-size: 2rem;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: #151729;
+    color: white;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    max-width: 800px;
+    width: 90%;
+    height: 60vh;
+    overflow-y: auto;
+
+    border: 1px solid rgba(255, 153, 153, 0.3);
+    box-shadow: 0 0 30px rgba(255, 153, 153, 0.4);
+    animation: modalIn 0.4s ease;
+}
+
+.modal-close {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: #ff9999;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.modal-close:hover {
+    color: #fff;
+}
+
+.modal img {
+    width: 100%;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    object-fit: cover;
+}
+
+.modal-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(90deg, #ff99cc, #ff9999);
+    color: #151729;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.modal-link:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.2);
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 /* FOOTER */
