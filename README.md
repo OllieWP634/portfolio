@@ -1,28 +1,44 @@
-# Oliver Peers - Portfolio
+# Portfolio Website  
+*A personal portfolio built to showcase software and research projects.*
 
-I'm an MSc Computer Science student at the University of Liverpool with a First-Class background in Civil Engineering. I’m passionate about applying analytical problem-solving to real-world software challenges — from data processing and algorithm design to front-end development.
+## Overview  
+This project serves as a central hub for my academic and personal work across computer science and engineering.  
+The site highlights selected projects demonstrating my skills in **software development**, **machine learning**, and **data systems**.
 
-### Current Focus
-Seeking a Software Engineering or Data Science placement (2025-2026) to apply my skills in Python, JavaScript, and large-scale data systems, while contributing to efficient, scalable software solutions.
+Developed initially using **HTML, CSS, and JavaScript**, the site is being redeveloped in **React** for improved modularity, performance, and scalability.
 
-### Technical Skills
-- **Languages:** Python, JavaScript, C, SQL, HTML, CSS  
-- **Frameworks & Tools:** React, TensorFlow, Spark, Pandas, Git  
-- **Focus Areas:** Software Development, Algorithmic Design, Data Systems, HPC Workflows
+## Tech Stack  
+- **Languages:** HTML, CSS, JavaScript
+- **Frameworks:** React (in progress)
+- **Tools:** Git, VS Code (planned deployment)
 
-### Software Projects
-**Neural Networks for Anaerobic Digestion**  
-Developed deep learning models using Python and TensorFlow to estimate ADM1 parameters from synthetic data. Trained on Barkla HPC, achieving high predictive accuracy (MSE 4.0×10⁻⁷). Produced a reproducible workflow and technical report demonstrating scalable model calibration.
+## Features  
+- Responsive and accessible design for desktop and mobile
+- Dedicated project pages with technical descriptions and links to source code
+- Clean UI to emphasise readability and presentation
+- Planned React-based architecture for reusable components and smoother navigation
 
-**Algorithmic and Database Systems** *(MSc Coursework)*  
-Implemented efficient algorithmic solutions in Python with time/space analysis. Designed and queried relational databases using SQL and Spark for distributed data processing.
+## Key Projects Highlighted  
+- **Neural Networks for Anaerobic Digestion** – Deep learning model calibration for biokinetic systems using TensorFlow and HPC pipelines.
+- **Algorithmic and Database Systems (MSc Coursework)** – Implementation of efficient algorithms and distributed SQL processing using Spark.
+- **Structural Engineering Computation (VBA & MATLAB)** – Engineering analysis tools for soil and truss systems using programmatic modelling.
 
-**Portfolio Website**  
-Built a responsive project showcase using HTML, CSS, and JavaScript (React version in progress). Designed to highlight key projects and technical growth.
+## Learning Outcomes  
+- Strengthened web development fundamentals (DOM, CSS layout, responsive design)  
+- Practised clean code principles and version control using Git  
+- Gained experience structuring a project for scalability using React components  
+
+## Project Status  
+🚧 **React redevelopment ongoing**  
+The static JavaScript version is complete, and a modular React rebuild is currently under development.
+
+## Author  
+Developed by **Oliver Peers**  
+MSc Computer Science @ University of Liverpool  
+[Visit Portfolio](https://olliewp634.github.io/portfolio/)
 
 ### Connect With Me
-- [LinkedIn](https://www.linkedin.com/in/oliver-peers/)  
+- [LinkedIn](https://www.linkedin.com/in/oliver-peers/)
+- [Handshake](https://liverpool.joinhandshake.co.uk/profiles/c2swwn)
 - [GitHub](https://github.com/OllieWP634)  
 - [Email](oliver.peers@outlook.com)
-
----
