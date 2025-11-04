@@ -18,9 +18,9 @@ const projects = {
   VBA: {
     title: "Structural Engineering Analysis Tool",
     subtitle: "Data Analysis",
-    img: "images/dissertation.jpg",
+    img: "images/",
     description:
-      "This project used synthetic ADM1 data to train neural networks for biokinetic parameter calibration. The final model, Ver57, achieved an MSE of 4.01E-07, showcasing the potential of data-driven modelling in anaerobic digestion.",
+      "Automated 3 common soil and truss calculations in VBA, streamlining geotechnical and structural workflows. Applied advanced formulae and logic to improve accuracy and reduce manual computation.",
     link: "https://github.com/ollieWP634"
   },
   MATLAB: {
@@ -28,7 +28,7 @@ const projects = {
     subtitle: "Data Analysis",
     img: "images/dissertation.jpg",
     description:
-      "This project used synthetic ADM1 data to train neural networks for biokinetic parameter calibration. The final model, Ver57, achieved an MSE of 4.01E-07, showcasing the potential of data-driven modelling in anaerobic digestion.",
+      "Built data pipelines to analyse income trends for graduate and postgraduate populations over a 10-year window. Employed advanced statistical functions to highlight 3+ key economic disparities with data-driven insights.",
     link: "https://github.com/ollieWP634"
   },
   portfolio: {
