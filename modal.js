@@ -15,6 +15,22 @@ const projects = {
       "This project used synthetic ADM1 data to train neural networks for biokinetic parameter calibration. The final model, Ver57, achieved an MSE of 4.01E-07, showcasing the potential of data-driven modelling in anaerobic digestion.",
     link: "https://github.com/ollieWP634"
   },
+  VBA: {
+    title: "Structural Engineering Analysis Tool",
+    subtitle: "Data Analysis",
+    img: "images/dissertation.jpg",
+    description:
+      "This project used synthetic ADM1 data to train neural networks for biokinetic parameter calibration. The final model, Ver57, achieved an MSE of 4.01E-07, showcasing the potential of data-driven modelling in anaerobic digestion.",
+    link: "https://github.com/ollieWP634"
+  },
+  MATLAB: {
+    title: "Income Data Analysis Tool",
+    subtitle: "Data Analysis",
+    img: "images/dissertation.jpg",
+    description:
+      "This project used synthetic ADM1 data to train neural networks for biokinetic parameter calibration. The final model, Ver57, achieved an MSE of 4.01E-07, showcasing the potential of data-driven modelling in anaerobic digestion.",
+    link: "https://github.com/ollieWP634"
+  },
   portfolio: {
     title: "Portfolio Website",
     subtitle: "Web Development",
