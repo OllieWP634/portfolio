@@ -444,6 +444,7 @@ html {
     font-size: 6rem;
     margin: 0;
     margin-bottom: 3rem;
+    margin-top: 10rem;
     background: linear-gradient(90deg, #ff9999, #ffffff, #ff6868, #ff9999);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -470,12 +471,36 @@ html {
     align-items: left;
     text-align: left;
     padding: 3.5rem;
-    height: 50rem;
+    min-height: 30rem;
     border-radius: 3rem;
     transition: transform 0.3s ease, filter 0.8s ease, outline 0.3s ease;
-    flex: 1 1 30rem;
+    flex: 1 1 100;
     outline: 0.5rem solid white;
     filter: grayscale(40%) brightness(0.6) contrast(1.1) saturate(0.6);
+}
+
+@media (max-width: 1100px) {
+    .project {
+        flex: 1 1 100%;
+        min-height: 45rem;
+    }
+
+    .projects-container {
+        gap: 6rem;
+        padding: 6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .project {
+        flex: 1 1 100%;
+        min-height: 35rem;
+    }
+
+    .projects-container {
+        gap: 4rem;
+        padding: 4rem;
+    }
 }
 
 #dissertation {
