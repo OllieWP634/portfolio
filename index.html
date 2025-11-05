@@ -134,13 +134,13 @@
                 </div>
             </a>
 
-            <a class="project" id="dashboard">
-                <h2>Data Dasboard</h2>
-                <h3>Software Engineering</h3>
+            <a class="project" id="FastAPI">
+                <h2>LogBox</h2>
+                <h3>Web App - FastAPI + SQL</h3>
                 <div class="skills">
                     <p class="Python">Python</p>
-                    <p class="Streamlit">Streamlit</p>
-                    <p class="Pandas">Pandas</p>
+                    <p class="FastAPI">FastAPI</p>
+                    <p class="SQL">SQL</p>
                 </div>
             </a>
 
@@ -150,20 +150,24 @@
 
     <div id="project-modal" class="modal">
         <div class="modal-content">
-            <button class="modal-close">&times;</button>
+            <div class="modal-content-inner">
 
-            <div class="modal-header">
-            <h2 id="modal-title"></h2>
-            <h3 id="modal-subtitle"></h3>
+                <button class="modal-close">&times;</button>
+
+                <div class="modal-header">
+                    <h2 id="modal-title"></h2>
+                    <h3 id="modal-subtitle"></h3>
+                </div>
             </div>
 
-            <div class="modal-body">
-            <img id="modal-img" src="" alt="Project preview">
-            <p id="modal-description"></p>
-            </div>
+            <div class="modal-content-outer">
+                <div class="modal-body">
+                    <p id="modal-description"></p>
+                </div>
 
-            <div class="modal-footer">
-            <a id="modal-link" href="#" target="_blank" class="modal-link">View Project</a>
+                <div class="modal-footer">
+                    <a id="modal-link" href="#" target="_blank" class="modal-link">View Project</a>
+                </div>
             </div>
         </div>
     </div>

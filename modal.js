@@ -10,7 +10,6 @@ const projects = {
   dissertation: {
     title: "Neural Networks for Anaerobic Digestion",
     subtitle: "Machine Learning",
-    img: "images/dissertation.jpg",
     description:
       "This project used synthetic ADM1 data to train neural networks for biokinetic parameter calibration. The final model, Ver57, achieved an MSE of 4.01E-07, showcasing the potential of data-driven modelling in anaerobic digestion.",
     link: "https://github.com/ollieWP634"
@@ -18,7 +17,6 @@ const projects = {
   VBA: {
     title: "Structural Engineering Analysis Tool",
     subtitle: "Data Analysis",
-    img: "images/",
     description:
       "Automated 3 common soil and truss calculations in VBA, streamlining geotechnical and structural workflows. Applied advanced formulae and logic to improve accuracy and reduce manual computation.",
     link: "https://github.com/ollieWP634"
@@ -26,7 +24,6 @@ const projects = {
   MATLAB: {
     title: "Income Data Analysis Tool",
     subtitle: "Data Analysis",
-    img: "images/dissertation.jpg",
     description:
       "Built data pipelines to analyse income trends for graduate and postgraduate populations over a 10-year window. Employed advanced statistical functions to highlight 3+ key economic disparities with data-driven insights.",
     link: "https://github.com/ollieWP634"
@@ -34,17 +31,15 @@ const projects = {
   portfolio: {
     title: "Portfolio Website",
     subtitle: "Web Development",
-    img: "images/portfolio.jpg",
     description:
       "A fully responsive, animated personal portfolio built using HTML, CSS, and JavaScript. Features include particle animations, scroll-triggered fades, and custom modals for project showcases.",
     link: "https://olliewp634.github.io/portfolio"
   },
-  dashboard: {
+  FastAPI: {
     title: "Data Dashboard",
     subtitle: "Software Engineering",
-    img: "images/dashboard.jpg",
     description:
-      "A real-time Streamlit dashboard for visualizing large datasets using Pandas and Python. Includes interactive charts, performance insights, and automated metric updates.",
+      "A FastAPI-powered film logging platform that stores rating and reflections in a SQL database, with planned analytics to visualise genre trends, user habits, and rating distributions.",
     link: "https://github.com/olliewp634"
   }
 };
@@ -58,7 +53,6 @@ document.querySelectorAll(".project").forEach(card => {
     if (project) {
       modalTitle.textContent = project.title;
       modalSubtitle.textContent = project.subtitle;
-      modalImg.src = project.img;
       modalDescription.textContent = project.description;
       modalLink.href = project.link;
       modal.style.display = "flex";
