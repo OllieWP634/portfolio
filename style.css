@@ -1,3 +1,5 @@
+ /* GENERAL PAGE SETTINGS */
+ 
  html {
   scroll-behavior: smooth !important;
  }
@@ -19,6 +21,21 @@ body, .about-me, .projects {
     animation: moveBackground 30s infinite alternate;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+html {
+    font-size: 45%;
+}
+
+/* SUBTLE BACKGROUND ANIMATION */
+
 @keyframes moveBackground {
     0%
     {
@@ -32,19 +49,6 @@ body, .about-me, .projects {
     {
         background-position: 0% 0%;
     }
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-html {
-    font-size: 45%;
 }
 
 #particles-js {
@@ -70,6 +74,8 @@ html {
     height: 25rem
 }
 
+/* MEDIA QUERIES TO REDUCE SIZE OF OBJECTS */
+
 @media (max-width: 1500px) {
     html {
         font-size: 42.5%;
@@ -88,7 +94,7 @@ html {
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 770px) { /* Starts wrapping about-me at 770px */
     html {
         font-size: 35%;
     }
@@ -216,7 +222,7 @@ html {
     max-height: 7em;
 }
 
-@keyframes slideInFromTop{
+@keyframes slideInFromTop { /* Subtle transition for intro-text */
     0% {
         transform: translateY(-10%);
     }
@@ -260,7 +266,7 @@ html {
 /* ABOUT ME */
 
 .about-me {
-    background-image: url("./images/background-image-2.png");
+    background-image: url("./images/background-image-2.png"); /* The whole span of about-me page */
     background-size: 20%;
     display: flex;
     flex-direction: column;
@@ -268,6 +274,16 @@ html {
     align-items: center;
     min-height: 100vh;
     color: #fcbdbd;
+}
+
+.about-me-main {  /* Contains all text and images in about-me */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    flex-wrap: wrap;
+    margin-top: 7rem;
 }
 
 .fade-section {
@@ -279,16 +295,6 @@ html {
 .fade-section.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-.about-me-main {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 8rem;
-    flex-wrap: wrap;
-    margin-top: 7rem;
 }
 
 /* PORTRAIT */
@@ -327,7 +333,7 @@ html {
     z-index: 1;
 }
 
-/* MAIN TEXT */
+/* ABOUT ME - MAIN TEXT */
 
 .about-me-text {
     display: flex;
@@ -368,7 +374,7 @@ html {
     animation: gradientShift 8s ease infinite;
 }
 
-@keyframes gradientShift {
+@keyframes gradientShift { /* Text and text-box gradient animation */
   0% { background-position: 0% 50%; }
   50% {background-position: 100% 50%;}
   100% { background-position: 0% 50%; }
@@ -385,7 +391,7 @@ html {
     color: rgb(221, 221, 221);
 }
 
-/* CONTACT INFO */
+/* CONTACT INFORMATION IN ABOUT-ME */
 
 .about-me-attach {
     display: flex;
@@ -410,11 +416,6 @@ html {
 
 #about-me-highlight {
     color:#ff6868
-}
-
-@keyframes glowPulse {
-  from { box-shadow: 0 0 2px #ffffff, 0 0 2px #ff9999; }
-  to { box-shadow: 0 0 2px #ffffff, 0 0 20px #ff9999; }
 }
 
 /* PROJECTS */
@@ -481,6 +482,8 @@ html {
     flex: 1 1 45rem;
     max-width: 60rem;
 }
+
+/* MEDIA QUERIES TO DETERMINE HOW PROJECT CARDS FLEX ON PAGE */
 
 @media (max-width: 1100px) {
     .project {
@@ -569,7 +572,7 @@ html {
     margin: 0;
 }
 
-.skills {
+.skills { /* Tech stack for each project */
     display: flex;
     gap: 2rem;
     font-size: 2rem;
