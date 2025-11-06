@@ -512,32 +512,43 @@ html {
 
 /* SPECIFICS FOR EACH PROJECT CARD */
 
-#dissertation {
-    background-image: url(./images/neural-network.jpg);
-    filter: grayscale(80%) brightness(0.5) contrast(1.2) saturate(0.6);
-}
-
-#VBA {
-    background-image: url(./images/vba.jpg);
+.project::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-size: cover;
-    filter: grayscale(80%) brightness(0.5) contrast(1.2) saturate(0.6);
+    border-radius: 3rem;
+    background-position: center;
+    filter: grayscale(60%) brightness(0.5);
+    pointer-events: none;
+    z-index: 0;
 }
 
-#MATLAB {
-    background-image: url(./images/matlab.jpg);
-    filter: grayscale(80%) brightness(0.5) contrast(1.2) saturate(0.6);
+.project > * {
+    position: relative;
+    z-index: 1;
 }
 
-#portfolio {
-    background-image: url(./images/background-image.png);
+#dissertation::before {
+    background-image: url("./images/neural-network.jpg");
+}
+
+#VBA::before {
+    background-image: url("./images/vba.jpg");
+}
+
+#MATLAB::before {
+    background-image: url("./images/matlab.jpg");
+}
+
+#portfolio::before {
+    background-image: url("./images/background-image.png");
     background-size: 40%;
-    filter: grayscale(80%) brightness(0.5) contrast(1.2) saturate(0.6);
+    filter: grayscale(0%) brightness(0.7);
 }
 
-#FastAPI {
-    background-image: url(./images/database.jpg);
-    background-size: cover;
-    filter: grayscale(80%) brightness(0.6) contrast(1.2) saturate(0.6);
+#FastAPI::before {
+    background-image: url("./images/database.jpg");
 }
 
 .project:hover, #FastAPI:hover, #VBA:hover, #MATLAB:hover, #dissertation:hover, #portfolio:hover {
