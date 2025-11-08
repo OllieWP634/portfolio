@@ -11,7 +11,7 @@ const projects = {
     title: "Neural Networks for Anaerobic Digestion",
     subtitle: "Machine Learning",
     description:
-      "This project used synthetic ADM1 data to train neural networks for biokinetic parameter calibration. The final model, Ver57, achieved an MSE of 4.01E-07, showcasing the potential of data-driven modelling in anaerobic digestion.",
+      "Developed a feed-forward neural network to predict key ADM1 biokinetic parameters from synthetic anaerobic digestion data. The model achieved high accuracy and generalised well across operating conditions, offering faster calibration than traditional optimisation methods. Includes data generation, training workflows, and evaluation metrics.",
     link: "https://github.com/ollieWP634"
   },
   VBA: {
