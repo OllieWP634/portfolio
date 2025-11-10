@@ -425,8 +425,12 @@ html {
     margin-bottom: 2.5rem;
 }
 
+#email-link:hover {
+  color: #ff6868;
+}
+
 #about-me-highlight {
-    color:#ff6868
+    color: #ff6868
 }
 
 /* PROJECTS */
