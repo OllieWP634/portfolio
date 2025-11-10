@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'ubuntu';
-    background-image: url(./images/background-image.png);
+    background-image: url("../img/background-image.png");
     background-size: 20%;
 }
 
@@ -277,7 +277,7 @@ html {
 /* ABOUT ME */
 
 .about-me {
-    background-image: url("./images/background-image-2.png"); /* The whole span of about-me page */
+    background-image: url("../img/background-image-2.png"); /* The whole span of about-me page */
     background-size: 20%;
     display: flex;
     flex-direction: column;
@@ -432,7 +432,7 @@ html {
 /* PROJECTS */
 
 .projects {
-    background-image: url("./images/background-image-2.png");
+    background-image: url("../img/background-image-2.png");
     background-size: 20%;
     display: flex;
     flex-direction: column;
@@ -544,25 +544,25 @@ html {
 }
 
 #dissertation::before {
-    background-image: url("./images/neural-network.jpg");
+    background-image: url("../img/neural-network.jpg");
 }
 
 #VBA::before {
-    background-image: url("./images/vba.jpg");
+    background-image: url("../img/vba.jpg");
 }
 
 #MATLAB::before {
-    background-image: url("./images/matlab.jpg");
+    background-image: url("../img/matlab.jpg");
 }
 
 #portfolio::before {
-    background-image: url("./images/background-image.png");
+    background-image: url("../img/background-image.png");
     background-size: 40%;
     filter: grayscale(0%) brightness(0.7);
 }
 
 #FastAPI::before {
-    background-image: url("./images/database.jpg");
+    background-image: url("../img/database.jpg");
 }
 
 .project:hover, #FastAPI:hover, #VBA:hover, #MATLAB:hover, #dissertation:hover, #portfolio:hover {
@@ -669,7 +669,7 @@ html {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("./images/background-image-2.png");
+    background-image: url("../img/background-image-2.png");
     background-size: cover;
     background-position: center;
     filter: grayscale(80%) brightness(0.5);
@@ -684,7 +684,7 @@ html {
 }
 
 .modal-content-outer {
-    background-image: url("./images/background-image.png");
+    background-image: url("../img/background-image.png");
     background-size: 20%;
     height: 50%;
     display: flex;
