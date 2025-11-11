@@ -62,19 +62,6 @@ html {
     pointer-events: none;
 }
 
-.about-me-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60vw;
-    justify-content: space-between;
-    margin-top: 70px;
-}
-
-.about-me-images img {
-    max-width: 25rem;
-    height: 25rem
-}
-
 /* MEDIA QUERIES TO REDUCE SIZE OF OBJECTS */
 
 @media (max-width: 1500px) {
