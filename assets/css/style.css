@@ -508,6 +508,8 @@ html {
 
 .project {
     display: flex;
+    position: relative;
+    overflow: hidden;
     flex-direction: column;
     justify-content: end;
     align-items: flex-start;
