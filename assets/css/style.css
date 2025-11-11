@@ -89,34 +89,67 @@ html {
     .about-me-main {
     flex-direction: column;
     gap: 4rem;
-  }
+    }
 
-  .about-me-portrait {
-    margin-top: 4rem;
-  }
+    .about-me-portrait {
+        margin-top: 4rem;
+    }
 
-  .about-me-text h1 {
-    font-size: 3.5rem;
-    text-align: center;
-  }
+    .about-me-text h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
 
-  .about-me-text p {
-    font-size: 1.6rem;
-  }
+    .about-me-text p {
+        font-size: 1.6rem;
+    }
 
-  .about-me-attach {
-    flex-direction: column;
-    gap: 2rem;
-  }
+    .about-me-attach {
+        flex-direction: column;
+        gap: 2rem;
+    }
 
-  #portrait-square {
-    display: none;
-  }
+    #portrait-square {
+        display: none;
+    }
 }
 
 @media (max-width: 615px) {
     html {
         font-size: 28%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 28%;
+    }
+    .about-me-main {
+        flex-direction: column;
+        gap: 2rem;
+        width: 90vw;
+    }
+
+    .about-me-portrait {
+        margin-top: 0rem;
+    }
+
+    .about-me-text h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-me-text p {
+        font-size: 1.6rem;
+    }
+
+    .about-me-attach {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #portrait-square {
+        display: none;
     }
 }
 
