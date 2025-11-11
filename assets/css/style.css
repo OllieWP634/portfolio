@@ -659,7 +659,7 @@ html {
     color: white;
     max-width: 800px;
     width: 90%;
-    height: 60vh;
+    height: 60dvh;
     overflow-y: auto;
 
     border: 0.4rem solid #ffffff;
