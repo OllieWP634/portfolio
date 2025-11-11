@@ -1,5 +1,8 @@
  /* GENERAL PAGE SETTINGS */
- 
+html, body {
+    min-height: 100dvh;
+}
+
  html {
   scroll-behavior: smooth !important;
   -webkit-text-size-adjust: 100%;
@@ -470,7 +473,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100dvh - 5rem);
 }
 
 .projects-header {
