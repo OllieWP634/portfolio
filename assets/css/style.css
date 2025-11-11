@@ -461,7 +461,11 @@ html {
 }
 
 #about-me-highlight {
-    color: #ff6868
+    color: #db85b7;
+}
+
+#about-me-highlight-2 {
+    color: #ff6868;
 }
 
 /* PROJECTS */
