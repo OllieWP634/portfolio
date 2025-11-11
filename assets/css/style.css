@@ -10,8 +10,10 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'ubuntu';
+    background: black;
     background-image: url("../img/background-image.png");
     background-size: 20%;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 body, .about-me, .projects {
