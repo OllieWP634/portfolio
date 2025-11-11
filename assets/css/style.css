@@ -506,7 +506,7 @@ html {
 }
 
 .projects-container {
-    width: 90%;
+    width: 80%;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
