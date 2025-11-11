@@ -1,47 +1,46 @@
 const modal = document.getElementById("project-modal");
 const modalTitle = document.getElementById("modal-title");
 const modalSubtitle = document.getElementById("modal-subtitle");
-const modalImg = document.getElementById("modal-img");
-const modalDescription = document.getElementById("modal-description");
+const modalOverview = document.getElementById("modal-overview");
+const modalResponsibilities = document.getElementById("modal-responsibilities");
+const modalTech = document.getElementById("modal-tech");
+const modalImpact = document.getElementById("modal-impact");
 const modalLink = document.getElementById("modal-link");
+const modalContact = document.getElementById("modal-contact");
 const modalClose = document.querySelector(".modal-close");
 
 const projects = {
   dissertation: {
-    title: "Neural Networks for Anaerobic Digestion",
-    subtitle: "Machine Learning",
-    description:
-      "Developed a feed-forward neural network to predict key ADM1 biokinetic parameters from synthetic anaerobic digestion data. The model achieved high accuracy and generalised well across operating conditions, offering faster calibration than traditional optimisation methods. Includes data generation, training workflows, and evaluation metrics.",
-    link: "https://github.com/ollieWP634"
-  },
+  title: "Neural Networks for Anaerobic Digestion",
+  overview:
+    "Developed neural networks to predict ADM1 parameters within anaerobic digestion. Trained on synthetic datasets and optimised for performance.",
+  responsibilities: [
+  "Designed ANN models in Python/TensorFlow to predict ADM1 parameters with high accuracy.",
+  "Deployed training pipelines on Barkla HPC to improve scalability and efficiency.",
+  "Enhanced model scalability and generalisation via optimised code structure and training pipelines."
+],
+  tech: "Python, TensorFlow, HPC, Git, GitLab, Bash",
+  impact:
+    "Reduced calibration time vs traditional optimisation. Showed strong predictive accuracy.",
+  link: "https://github.com/ollieWP634",
+  contact: true
+},
+
   VBA: {
     title: "Structural Engineering Analysis Tool",
     subtitle: "Data Analysis",
-    description:
-      "Automated 3 common soil and truss calculations in VBA, streamlining geotechnical and structural workflows. Applied advanced formulae and logic to improve accuracy and reduce manual computation.",
-    link: "https://github.com/ollieWP634"
-  },
-  MATLAB: {
-    title: "Income Data Analysis Tool",
-    subtitle: "Data Analysis",
-    description:
-      "Built data pipelines to analyse income trends for graduate and postgraduate populations over a 10-year window. Employed advanced statistical functions to highlight 3+ key economic disparities with data-driven insights.",
-    link: "https://github.com/ollieWP634"
-  },
-  portfolio: {
-    title: "Portfolio Website",
-    subtitle: "Web Development",
-    description:
-      "A fully responsive, animated personal portfolio built using HTML, CSS, and JavaScript. Features include particle animations, scroll-triggered fades, and custom modals for project showcases.",
-    link: "https://olliewp634.github.io/portfolio"
-  },
-  FastAPI: {
-    title: "Data Dashboard",
-    subtitle: "Software Engineering",
-    description:
-      "A FastAPI-powered film logging platform that stores rating and reflections in a SQL database, with planned analytics to visualise genre trends, user habits, and rating distributions.",
-    link: "https://github.com/olliewp634"
+    overview:
+      "Automated geotechnical and truss calculations in VBA.",
+    responsibilities:
+      "Formula design. Data validation. Output formatting.",
+    tech:
+      "Excel VBA",
+    impact:
+      "Reduced manual calculation time; improved clarity and repeatability.",
+    link: "https://github.com/ollieWP634",
+    contact: false
   }
+
 };
 
 document.querySelectorAll(".project").forEach(card => {
@@ -50,23 +49,48 @@ document.querySelectorAll(".project").forEach(card => {
     const id = card.id;
     const project = projects[id];
 
-    if (project) {
-      modalTitle.textContent = project.title;
-      modalSubtitle.textContent = project.subtitle;
-      modalDescription.textContent = project.description;
-      modalLink.href = project.link;
-      modal.style.display = "flex";
-      document.body.style.overflow = "hidden";
+    if (!project) return;
+
+    modalTitle.textContent = project.title;
+    modalSubtitle.textContent = project.subtitle || "";
+
+    modalOverview.textContent = project.overview;
+    
+    if (Array.isArray(project.responsibilities)) {
+      modalResponsibilities.innerHTML = project.responsibilities
+        .map(item => `<li>${item}</li>`)
+        .join("");
+    } else {
+      modalResponsibilities.innerHTML = `<li>${project.responsibilities}</li>`;
     }
+
+    modalTech.textContent = project.tech;
+    modalImpact.textContent = project.impact;
+
+    modalLink.href = project.link;
+
+    if (project.contact) {
+      modalContact.classList.remove("hidden");
+      modalContact.href = "mailto:example@email.com";
+    } else {
+      modalContact.classList.add("hidden");
+    }
+
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
   });
 });
 
-modalClose.addEventListener("click", closeModal);
-modal.addEventListener("click", e => {
-  if (e.target === modal) closeModal();
+modalClose.addEventListener("click", () => {
+  modal.style.display = "none";
+  document.body.style.overflow = "";
 });
 
-function closeModal() {
-  modal.style.display = "none";
-  document.body.style.overflow = "auto";
-}
+document.querySelectorAll(".modal").forEach(m => {
+  m.addEventListener("click", e => {
+    if (e.target === m) {
+      m.style.display = "none";
+      document.body.style.overflow = "";
+    }
+  });
+});

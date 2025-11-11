@@ -96,11 +96,8 @@
 
     <div class="projects" id="projects">
         <div class="projects-header fade-section">
-
             <h1>PROJECTS</h1>
-
         </div>
-
         <div class="projects-container fade-section">
             
             <a class="project" id="dissertation">
@@ -149,32 +146,48 @@
                     <p class="FastAPI">FastAPI</p>
                     <p class="SQL">SQL</p>
                 </div>
+
             </a>
-
         </div>
-
     </div>
 
     <div id="project-modal" class="modal">
         <div class="modal-content">
-            <div class="modal-content-inner">
 
-                <button class="modal-close">&times;</button>
+            <button class="modal-close">&times;</button>
 
-                <div class="modal-header">
-                    <h2 id="modal-title"></h2>
-                    <h3 id="modal-subtitle"></h3>
-                </div>
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <h3 id="modal-subtitle"></h3>
             </div>
 
-            <div class="modal-content-outer">
-                <div class="modal-body">
-                    <p id="modal-description"></p>
-                </div>
+            <div class="modal-sections">
 
-                <div class="modal-footer">
-                    <a id="modal-link" href="#" target="_blank" class="modal-link">View Project</a>
-                </div>
+                <section class="modal-section">
+                    <h4>Overview</h4>
+                    <p id="modal-overview"></p>
+                </section>
+
+                <section class="modal-section">
+                    <h4>Key Responsibilities</h4>
+                    <ul id="modal-responsibilities"></ul>
+                </section>
+
+                <section class="modal-section">
+                    <h4>Tech Stack</h4>
+                    <p id="modal-tech"></p>
+                </section>
+
+                <section class="modal-section">
+                    <h4>Impact</h4>
+                    <p id="modal-impact"></p>
+                </section>
+
+            </div>
+
+            <div class="modal-footer">
+            <a id="modal-link" href="#" target="_blank" class="modal-link">View Project</a>
+            <a id="modal-contact" href="#" class="modal-contact hidden">Contact Me</a>
             </div>
         </div>
     </div>
