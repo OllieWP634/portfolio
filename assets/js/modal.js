@@ -84,7 +84,7 @@ const projects = {
   },
 
   FastAPI: {
-    title: "LogBox",
+    title: "LogBox - Film Logging",
     overview:
       "LogBox is a web application that allows users to log, rate, and reflect on their favourite films. The project aims to integrate data analysis features to uncover insights such as genre trends, average ratings, and viewing habits. This project is currently in development, with backend services built using FastAPI and a SQL database, and plans for a lightweight frontend for user interaction and data visualisation.",
     responsibilities: [
