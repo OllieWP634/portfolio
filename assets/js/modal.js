@@ -104,8 +104,8 @@ const projects = {
     ],
     impact:
       "Develop my first full-stack web application, expanding on current knowledge.",
-    link: "https://github.com/OllieWP634/portfolio",
-  },
+    link: "https://github.com/OllieWP634/film-journal-app",
+  }
 };
 
 document.querySelectorAll(".project").forEach(card => {
