@@ -1,6 +1,5 @@
 const modal = document.getElementById("project-modal");
 const modalTitle = document.getElementById("modal-title");
-const modalSubtitle = document.getElementById("modal-subtitle");
 const modalOverview = document.getElementById("modal-overview");
 const modalResponsibilities = document.getElementById("modal-responsibilities");
 const modalTech = document.getElementById("modal-tech");
@@ -15,9 +14,9 @@ const projects = {
   overview:
     "Developed neural networks to predict ADM1 parameters within anaerobic digestion. Trained on synthetic datasets and optimised for performance.",
   responsibilities: [
-  "Designed ANN models in Python/TensorFlow to predict ADM1 parameters with high accuracy.",
-  "Deployed training pipelines on Barkla HPC to improve scalability and efficiency.",
-  "Enhanced model scalability and generalisation via optimised code structure and training pipelines."
+  "• Designed ANN models in Python/TensorFlow to predict ADM1 parameters with high accuracy.",
+  "• Deployed training pipelines on Barkla HPC to improve scalability and efficiency.",
+  "• Enhanced model scalability and generalisation via optimised code structure and training pipelines."
 ],
   tech: "Python, TensorFlow, HPC, Git, GitLab, Bash",
   impact:
@@ -28,7 +27,6 @@ const projects = {
 
   VBA: {
     title: "Structural Engineering Analysis Tool",
-    subtitle: "Data Analysis",
     overview:
       "Automated geotechnical and truss calculations in VBA.",
     responsibilities:
@@ -52,7 +50,6 @@ document.querySelectorAll(".project").forEach(card => {
     if (!project) return;
 
     modalTitle.textContent = project.title;
-    modalSubtitle.textContent = project.subtitle || "";
 
     modalOverview.textContent = project.overview;
     
