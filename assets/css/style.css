@@ -473,7 +473,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(100dvh - 5rem);
+    min-height: 100dvh;
 }
 
 .projects-header {
