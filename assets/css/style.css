@@ -731,6 +731,7 @@ html {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
+    justify-content: flex-start;
     text-align: left;
     gap: 1rem;
     overflow-y: auto;
@@ -749,6 +750,10 @@ html {
 .modal-sections {
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+.modal-sections > * {
+    transform: translateZ(0);
 }
 
 .modal-section {

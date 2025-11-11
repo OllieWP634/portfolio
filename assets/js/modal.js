@@ -26,8 +26,7 @@ const projects = {
     "• GitLab"
   ],
   impact:
-    "Reduced calibration time vs traditional optimisation. Showed strong predictive accuracy.",
-  link: "https://github.com/ollieWP634",
+    "Reduced calibration time vs traditional optimisation. Showed strong predictive accuracy."
 },
 
   VBA: {
@@ -43,8 +42,7 @@ const projects = {
       "• Microsoft Excel"
     ],
     impact:
-      "Reduced manual calculation time; improved clarity and repeatability.",
-    link: "https://github.com/ollieWP634",
+      "Reduced manual calculation time; improved clarity and repeatability."
   },
 
   MATLAB: {
@@ -138,7 +136,12 @@ document.querySelectorAll(".project").forEach(card => {
 
     modalImpact.textContent = project.impact;
 
-    modalLink.href = project.link;
+    if (project.link && project.link !== "") {
+      modalLink.href = project.link;
+      modalLink.style.display = "inline-flex"; // show the link
+    } else {
+      modalLink.style.display = "none"; // hide the link
+    }
 
     modal.style.display = "flex";
     document.body.style.overflow = "hidden";
