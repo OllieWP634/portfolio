@@ -75,7 +75,6 @@ const projects = {
       "• JavaScript",
       "• HTML",
       "• CSS",
-      "• React (In Progress)",
       "• Git"
     ],
     impact:
