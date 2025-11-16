@@ -4,8 +4,9 @@ html, body {
 }
 
  html {
-  scroll-behavior: smooth !important;
-  -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth !important;
+    -webkit-text-size-adjust: 100%;
+    font-size: 45%;
  }
 
 body {
@@ -34,10 +35,6 @@ li {
 a {
     text-decoration: none;
     color: white;
-}
-
-html {
-    font-size: 45%;
 }
 
 /* SUBTLE BACKGROUND ANIMATION */

@@ -84,9 +84,9 @@ const projects = {
   },
 
   FastAPI: {
-    title: "LogBox - Film Logging",
+    title: "Filmlytic - Film Logging & Data Analysis",
     overview:
-      "LogBox is a web application that allows users to log, rate, and reflect on their favourite films. The project aims to integrate data analysis features to uncover insights such as genre trends, average ratings, and viewing habits. This project is currently in development, with backend services built using FastAPI and a SQL database, and plans for a lightweight frontend for user interaction and data visualisation.",
+      "Filmlytic is a web application that allows users to log their favourite films, generating new recommendations based on the movies selected. The project aims to integrate data analysis features to uncover insights such as genre trends, average ratings, and viewing habits.",
     responsibilities: [
       "• Implementing a RESTful API for creating and retrieving film logs.",
       "• Store and manage user film data in a relational database.",
@@ -96,7 +96,7 @@ const projects = {
     tech:[
       "• Backend: FastAPI (Python)",
       "• Database: SQL",
-      "• Frontend: HTML, CSS, JavaScript (planned)",
+      "• Frontend: HTML, CSS, JavaScript",
       "• Data Handling: Pandas, JSON",
       "• Version Control: Git"
     ],
